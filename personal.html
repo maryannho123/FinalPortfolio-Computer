@@ -33,20 +33,30 @@
         </nav>
 
     </header>
-    
-    <main class = "personal_container">
-        <div class = "header">
-            <div class = "notT">
-                <h1  class = "fade-in">About Me</h1>
-            </div>
+    <div class = "header">
+        <div class = "notT">
+            <h1  class = "fade-in">About Me</h1>
         </div>
+    </div>
 
+    <main class = "personal_container">
+
+        <div class = "buttons">
+            <h2>Choose a filter to add to my photos!</h2>
+            <button class ="button-3" id="sepia_button">Sepia</button>
+            <button class ="button-3"id="blur_button">Blur</button>
+            <button class ="button-3"id="gray_button">Grayscale</button>
+            <button class ="button-3"id="saturate_button">Saturate</button>
+            <button class ="button-3"id="undo_button">Undo</button>
+
+        </div>
+    
             <div class = "image1" id="skip">
-                <img id = "filter" src = "images/mary_snow.png" alt = "picture of Mary in Snow">
+                <img id = "filter1" src = "images/mary_snow.png" alt = "picture of Mary in Snow">
             </div>
 
             <div class = "image2">
-                <img src = "images/co.png" alt = "picture of colorado">
+                <img id = "filter2" src = "images/co.png" alt = "picture of colorado">
             </div>
 
             <p class = "personal-1" > Hi, my name is Mary. I grew up with my four siblings and a very loud pet bird in Boulder
@@ -55,22 +65,22 @@
             </p>
 
             <div class = "image3">
-                <img src = "images/mary_mi.png" alt = "picture of Mary at MI stadium">
+                <img id = "filter3"src = "images/mary_mi.png" alt = "picture of Mary at MI stadium">
             </div>
 
             <div class = "image4">
-                <img src = "images/mi_football.png" alt = "picture of mary in helicopter">
+                <img  id = "filter4" src = "images/mi_football.png" alt = "picture of mary in helicopter">
             </div>
             <p class =  "personal-2"> I am currently a Junior majoring in Computer Science through the 
                 College of Enginnering. I have experience in machine learning, computer vision, data processing, and research.
                 I am an active member of the Society of Women of Engineers as I am one of the girl scout outreach officers. 
                 I am passionate about increasing accessibility of STEM opportunities to young girls. </p>
             <div class = "image5">
-                <img src = "images/mary_or.png" alt = "picture of Mary at oregon">
+                <img  id = "filter5" src = "images/mary_or.png" alt = "picture of Mary at oregon">
             </div>
     
             <div class = "image6">
-                <img src = "images/travel.png" alt = "picture of mary in london">
+                <img  id = "filter6" src = "images/travel.png" alt = "picture of mary in london">
             </div>
             
             <p class =  "personal-3"> Outside of school, I am an avid watcher of Bachelor Nation.
@@ -78,30 +88,24 @@
                      as I actively played the violin for 15 years. </p>    
             
             <div class = "image7">
-                <img src = "images/mary_mount.png" alt = "picture of colorado mountain">
+                <img  id = "filter7" src = "images/mary_mount.png" alt = "picture of colorado mountain">
             </div>
     
             <div class = "image8">
-                <img src = "images/mary_red.png" alt = "picture of mary in red rock">
+                <img id = "filter8" src = "images/mary_red.png" alt = "picture of mary in red rock">
             </div>
             <div class = "image9">
-                <img src = "images/mary_fence.png" alt = "picture of Mary on fence">
+                <img id = "filter9" src = "images/mary_fence.png" alt = "picture of Mary on fence">
             </div>    
         
+           
             </main>
-            <h1>Demo: Get Started Debugging JavaScript with Chrome DevTools</h1>
-            <label for="num1">Number 1</label>
-            <input placeholder="Number 1" id="num1">
-            <label for="num2">Number 2</label>
-            <input placeholder="Number 2" id="num2">
-            <button>Add Number 1 and Number 2</button>
-            <p></p>
-	     <script src="image_filters.js"></script>
-
-<!--     <footer>
+        
+            <script src="image_filters.js"></script>
+    <footer>
         <p>
             Mary Ho © 2021
         </p>
-    </footer>  -->
+    </footer> 
 </body>
 </html>

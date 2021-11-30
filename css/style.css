@@ -9,7 +9,19 @@
     background-color: #5E2612;
     filter: alpha(opacity = 50);
     zoom:1;
-    }
+}
+.blur{
+    filter: blur(5px);
+}
+.gray{
+    filter:grayscale(100%);
+}
+.saturate{
+    filter:saturate(8);
+
+}
+
+
 body{
     font-size: 18px;
     margin: 0;
@@ -279,6 +291,8 @@ footer{
 
 }
 .image9{
+    /* transform: translateX(-100%); */
+
     display: none;
 }
 .personal-1{
@@ -302,6 +316,56 @@ footer{
 
 }
 
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
 /* Academics */
 .freshmenYear, .sophmoreYear, .juniorYear, .eecs280, .eecs281, .eecs370{
     border-top: 3px solid #048a99;
@@ -549,7 +613,7 @@ form {
         grid-row: 7 / span 1;
     }
     .image9{
-        display: contents;
+        display:initial ;
         grid-column:2/ span 1;
         grid-row: 7 / span 1;
     }

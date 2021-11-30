@@ -1,37 +1,56 @@
-function onClick() {
-  if (inputsAreEmpty()) {
-    label.textContent = 'Error: one or both inputs are empty.';
-    return;
-  }
-  updateLabel();
-}
-function inputsAreEmpty() {
-  if (getNumber1() === '' || getNumber2() === '') {
-    return true;
-  } else {
-    return false;
-  }
-}
-function updateLabel() {
-  var addend1 = getNumber1();
-  var addend2 = getNumber2();
-  var sum = addend1 + addend2;
-  label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
-}
-function getNumber1() {
-  return inputs[0].value;
-}
-function getNumber2() {
-  return inputs[1].value;
-}
-var inputs = document.querySelectorAll('input');
-var label = document.querySelector('p');
-var button = document.querySelector('button');
-button.addEventListener('click', onClick);
+
+var button;
+
+document.querySelector("#sepia_button").addEventListener("click", function(){
+    button = "sepia";
+});
+
+document.querySelector("#blur_button").addEventListener("click", function() {
+    button = "blur";
+});
+document.querySelector("#gray_button").addEventListener("click", function() {
+    button = "gray";
+});
+document.querySelector("#saturate_button").addEventListener("click", function() {
+    button = "saturate";
+});
 
 
+$("#filter1").click(function(){ // image1
+    $(".image1").addClass(button);
+});
 
+$("#filter2").click(function(){// image2
+    $(".image2").addClass(button);
+});
 
-// $("#filter").click(function(){
-//     $("img").addClass("sepia");
-// });
+$("#filter3").click(function(){// image3
+    $(".image3").addClass(button);
+});
+
+$("#filter4").click(function(){// image4
+    $(".image4").addClass(button);
+});
+
+$("#filter5").click(function(){// image5
+    $(".image5").addClass(button);
+});
+
+$("#filter6").click(function(){// image6
+    $(".image6").addClass(button);
+});
+
+$("#filter7").click(function(){// image7
+    $(".image7").addClass(button);
+});
+
+$("#filter8").click(function(){// image8
+	console.log("Pause Video");
+
+    $(".image8").addClass(button);
+});
+
+$("#filter9").click(function(){// image9
+	console.log("Pause Video");
+    $(".image9").addClass(button);
+});
