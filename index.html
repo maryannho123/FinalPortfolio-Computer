@@ -20,38 +20,59 @@
         <div class = "letterM">
             <img src = "images/letter_m.jpeg" alt = "letter M"></img>
         </div>
-        <div class="break"></div> <!-- break to a new row -->
+        <!-- <div class="break"></div> break to a new row -->
         <nav class ="nav">
             <ul class = "nav_links">
-                <li><a class = "current" href = "index.html">Home</a></li>
-                <li><a  href = "personal.html">About Me</a></li>
-                <li><a href = "academics.html">Academics</a></li>
-                <li><a href = "professional.html">Professional</a></li>
-                <li><a href = "contactme.html">Contact Me</a></li>
+                
+                <li class = "nav_item"><a class = " current" href = "index.html">Home</a></li>
+                <li class = "nav_item"><a   href = "personal.html">About Me</a></li>
+                <li class = "nav_item"><a  href = "academics.html">Academics</a></li>
+                <li class = "nav_item"><a href = "professional.html">Professional</a></li>
+                <li class = "nav_item" ><a href = "contactme.html">Contact Me</a></li>
             </ul>
         </nav>
 
     </header>
         <main>
             
-            <div class = "header">
+            <div class = "header" >
                 <div class = "notT">
-                    <h1>Home</h1>
+                    <h1 class = "fade-in">Home</h1>
                 </div>
             </div>
+
             <div class = "introduction">
-                <div class = "intro-image">
-                    <img src = "images/mary_red_rock.png" alt = "picture of Mary">
-                </div>
+                <!-- Let us make a flip card :) -->
                 <div class ="intro-heading" >
                     <p>Welcome to my website! </p>
                 </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <a href="#" id="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src = "images/mary_red_rock.png" alt = "picture of Mary">
+                        </div>
+                      </a>
+                      <div class="flip-card-back">
+                        <p> This website is my final portfolio for my SI 339 class, Web Design, Development, and Accessibility.
+                            It is a work in progress as I continue to add content and make it more accessible. 
+                            View this website on your phone, tablet, or computer as it is responsive to each device.
+                            Thank you for visiting! 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                
+
                 <div class ="intro-paragraph" id="skip">
                     <p> Here you will be able to navigate my professional 
                         and academic life, and also learn more about me. </p>
                 </div>
             </div>
-
+           
+              
+               
 
         </main>
 
@@ -61,6 +82,8 @@
             Mary Ho © 2021
         </p>
     </footer> 
+    
+
 </body>
 </html>
 

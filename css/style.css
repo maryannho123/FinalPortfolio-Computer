@@ -1,14 +1,38 @@
+
+
+/* in general styles */
+.sepia{ -webkit-filter: sepia(1);
+    -webkit-filter: sepia(100%); -moz-filter: sepia(100%);
+    -ms-filter: sepia(100%); -o-filter: sepia(100%);
+    filter: url(sepia.svg#old-timey);
+    filter: sepia(100%);
+    background-color: #5E2612;
+    filter: alpha(opacity = 50);
+    zoom:1;
+    }
 body{
     font-size: 18px;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', serif;
   }
-  h3{
+h1{
+    color: #146061;
+    padding: 10%;
+    text-align: center;
+    opacity: 1;
+}
+h2{
+    color:#942428;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-style: italic;
+}
+h3{
       margin-top: 10%;;
       font-size: 20px;
       color: #2d94a2;
-  }
+}
 a { 
     font-size: 24px;
     text-decoration: none; 
@@ -16,6 +40,21 @@ a {
     line-height: 1.5;
 
 }
+img {
+    width: 100%;
+    height: 100%;
+
+}
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+  
+  *:focus{
+    border: 2px solid black;
+  }
+/* header styles */
 header{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -25,35 +64,14 @@ header{
     grid-column: 1/span 1;
     grid-row: 1/span 1;
 }
+ul li {
+    padding: 5px 0px;
+}
 .letterM{
     height:70%;
     width: 70%;
     grid-column: 2/span 1;
     grid-row: 1/span 1;
-}
-a:visited { 
-    text-decoration: none; 
-    color:#0077b6; 
-}
-
-a.current{
-    color:black; 
-    font-style: italic;
-    font-weight: bold; 
-}
-
-
-
-.personal_container{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-row-gap: 15px;
-}
-img {
-    width: 100%;
-    height: 100%;
-
 }
 
 .header{
@@ -80,21 +98,33 @@ img {
     background: rgba(255, 255, 255, 0.7);
 }
 
-
-
-h1{
-    /* font-size: 24px; */
-    color: #146061;
-    padding: 10%;
-    text-align: center;
-    opacity: 1;
+.fade-in{
+    animation: fadeIn 5s;
 }
-h2{
-    color:#942428;
-    margin-top: 2%;
-    margin-bottom: 1%;
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* navigation styles */
+
+a:visited { 
+    text-decoration: none; 
+    color:#0077b6; 
+}
+
+a.current{
+    color:black; 
     font-style: italic;
+    font-weight: bold; 
 }
+
+
+/* Home*/
+
 .introduction{
     position: relative;
     text-align: center;
@@ -109,15 +139,11 @@ h2{
 }   
 .intro-heading{
     font-size: 30px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
     color: #1c898a;
-    background-color: white;
     opacity: 0.9;
     text-align: center;
-    /* grid-column: 1/-1;
-    grid-row: 2 / span 1; */
+    margin-top: 10%;
+
     
 }
 .intro-paragraph{
@@ -137,51 +163,117 @@ footer{
     width: 100%;
     height: 2.5rem;   
 }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    background-color: transparent;
+    width: 24em;
+    height: 30em;
+  }
+  
+  
+  /* This container is needed to position the front and back side */
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  /* Position the front and back side */
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  
+  /* Style the front side (fallback if image is missing) */
+  
+  .flip-card-front {
+    background-color: #008CCC;
+    background-color: azure;
+    color: white;
+    color: black;
+  }
+  
+  
+  /* Style the back side */
+  
+  .flip-card-back {
+    background-color: #99CC66;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-inner p{
+      color:#121212;
+  }
+
+/* About Me*/
+.personal_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-row-gap: 15px;
+}
+
 .image1{
-    /* grid-column: 1/span1; */
     grid-row: 2 / span 1;
     object-fit: fill;
     background-size: cover;
 
 }
 .image2{
-    /* grid-column: 2/span1; */
     grid-row: 2 / span 1;
     object-fit: fill;
 
 }
 .image3{
-    /* grid-column: 1/span1; */
     grid-row: 4 / span 1;
     object-fit: fill;
 
 }
 .image4{
-    /* grid-column: 2/span1; */
     grid-row: 4 / span 1;
     object-fit: fill;
 
 }
 .image5{
-    /* grid-column: 1/span1; */
     grid-row: 6 / span 1;
     object-fit: fill;
 
 }
 .image6{
-    /* grid-column: 2/span1; */
     grid-row: 6 / span 1;
     object-fit: fill;
 
 }
-.image7{
-    /* grid-column: 1/span1; */
+.image7{    
     grid-row: 8/ span 1;
     object-fit: fill;
 
 }
 .image8{
-    /* grid-column: 2/span1; */
     grid-row: 8 / span 1;
     object-fit: fill;
 
@@ -209,9 +301,8 @@ footer{
     padding: 1em;
 
 }
-ul li {
-     padding: 5px 0px;
-}
+
+/* Academics */
 .freshmenYear, .sophmoreYear, .juniorYear, .eecs280, .eecs281, .eecs370{
     border-top: 3px solid #048a99;
     opacity: 0.9;
@@ -226,7 +317,7 @@ ul{
     color:#048a99;
     text-decoration: underline;
 }
-
+/* Professional */
 .SEPP_Intern, .CU_Intern, .MI_Intern{
     border-top: 3px solid #048a99;
     padding-left: 30px;
@@ -236,6 +327,9 @@ ul{
     margin-bottom: 2%;
 
 }
+
+/* Contact Me */
+
 .contactP{
     margin-top: 5%;
     text-align: center;
@@ -274,13 +368,19 @@ ul{
 }
 
 form {
-    border: 3px solid #1c898a;
+    /* border: 3px solid #1c898a; */
     width: 75%;
-    margin-left: 14%;
-    
-  }
+    margin-left: 10%;
+    padding: 2%;
+}
+.intro-heading1{
+    font-family: "Dancing Script", serif;
+    color: #146061;
+    font-size: 24px;
+    padding: 3%;
+}
   
-  legend{ 
+ legend{ 
     font-size: 125%;
     font-style:italic;
     text-transform: uppercase;
@@ -349,28 +449,16 @@ form {
   .intro-image2{
       display: none;
   }
-  a.skip:focus{
-    top:20px;
-    color: black;
-    text-decoration-style: solid;
-  }
-  
-  *:focus{
-    border: 2px solid black;
-  }
+
  
 @media screen and (min-width: 760px){
+    /* General */
     header{
         display: flex;
-        /* justify-content: space-around; */
         flex-wrap: wrap;
         flex-direction: column;
 
     }
-    .break {
-        flex-basis: 100%;
-        height: 0;
-      }
     .nav_links{
         display: flex;
         flex-direction: row;
@@ -391,6 +479,7 @@ form {
         background-size: cover; /* Parallax effect */
         height:400px; /* Parallax effect */
     }
+    /* Home */
     .introduction{
         display: grid;
         grid-template-columns: 60% 40%;
@@ -411,6 +500,7 @@ form {
         margin-right: 5%;
         font-size: 20px;
     }
+    /* personal */
     .personal-1{
         grid-column:2/ span 1;
         grid-row: 2 / span 1;
@@ -463,6 +553,7 @@ form {
         grid-column:2/ span 1;
         grid-row: 7 / span 1;
     }
+    /* Academics */
     .coursework{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -566,7 +657,7 @@ form {
     
     img.field{
         width: 100%;
-        height: 80%;
+        height: 50%;
         object-fit: contain;
 
     }
@@ -712,8 +803,9 @@ form {
     .intro-heading1{
         grid-column: 2/ span 1;
         grid-row: 1 / span 1;
-        color: black;
         text-align: center;
+        margin-top: 25%;
+
     }
     .intro-image2{
         display: block;
@@ -722,4 +814,40 @@ form {
         grid-row: 1 / span 1;
 
     }
+
+    .break {
+        display: none;
+        /* flex-basis: 0%;
+        height: 0; */
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: unset; */
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .letterM{
+        margin-left: 0%;
+    }
+    .nav_links {
+        flex-direction: row;
+    }
+    .nav_item a {
+        padding: 1.5em;
+    }
+    .containerProfess{
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+    }
+
+} 
+
+
+@media (prefers-reduced-motion) {
+    .flip-card-inner {
+        transition: transform none;
+    }
+
+
 }
