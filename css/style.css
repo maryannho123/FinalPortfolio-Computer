@@ -71,22 +71,20 @@ a.skip:focus{
   }
 /* header styles */
 header{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-row: auto;
+    display: flex;
+    flex-direction: row-reverse;
 }
-.nav{
+/* .nav{
     grid-column: 1/span 1;
     grid-row: 1/span 1;
-}
+} */
 ul li {
     padding: 5px 0px;
 }
 .letterM{
     height:70%;
     width: 70%;
-    grid-column: 2/span 1;
-    grid-row: 1/span 1;
+
 }
 
 .header{
@@ -146,13 +144,13 @@ a.current{
     color: white;
 }
 
-.intro-image{
+#garden-image{
 
     object-fit: fill;
     margin-top: 1em;
     margin-bottom: 1em;
 }   
-.intro-heading{
+#intro-heading{
     font-size: 30px;
     color: #1c898a;
     opacity: 0.9;
@@ -161,7 +159,7 @@ a.current{
 
     
 }
-.intro-paragraph{
+#intro-paragraph{
     text-align: center;
     grid-column: 2/span 1;
     grid-row: 1 / span 1;
@@ -169,7 +167,7 @@ a.current{
     margin-bottom: 1em;
     color:black;
 }
-.intro-explation{
+#intro-explation{
     color:black;
     padding: 3%;
 }
@@ -260,66 +258,66 @@ footer{
     grid-row-gap: 15px;
 }
 
-.image1{
+#image1{
     grid-row: 2 / span 1;
     object-fit: fill;
     background-size: cover;
 
 }
-.image2{
+#image2{
     grid-row: 2 / span 1;
     object-fit: fill;
 
 }
-.image3{
+#image3{
     grid-row: 4 / span 1;
     object-fit: fill;
 
 }
-.image4{
+#image4{
     grid-row: 4 / span 1;
     object-fit: fill;
 
 }
-.image5{
+#image5{
     grid-row: 6 / span 1;
     object-fit: fill;
 
 }
-.image6{
+#image6{
     grid-row: 6 / span 1;
     object-fit: fill;
 
 }
-.image7{    
+#image7{    
     grid-row: 8/ span 1;
     object-fit: fill;
 
 }
-.image8{
+#image8{
     grid-row: 8 / span 1;
     object-fit: fill;
 
 }
-.image9{
+#image9{
     /* transform: translateX(-100%); */
 
     display: none;
 }
-.personal-1{
+#personal-1{
     grid-column:1/-1;
     grid-row: 3 / span 1;
     text-align: center;
     padding: 1em;
 }
-.personal-2{
+#personal-2{
     grid-column:1/-1;
     grid-row:5 / span 1;
     text-align: center;
     padding: 1em;
 
 }
-.personal-3{
+#personal-3{
     grid-column:1/-1;
     grid-row:7 / span 1;
     text-align: center;
@@ -356,12 +354,12 @@ footer{
 ul{
     list-style-type: square;
 }
-.download a{
+#download a{
     color:#048a99;
     text-decoration: underline;
 }
 /* Professional */
-.SEPP_Intern, .CU_Intern, .MI_Intern{
+.intern{
     border-top: 3px solid #048a99;
     padding-left: 30px;
     padding-top: 10px;
@@ -373,7 +371,7 @@ ul{
 
 /* Contact Me */
 
-.contactP{
+#contactP{
     margin-top: 5%;
     text-align: center;
     grid-column: 1 / span 2;
@@ -384,7 +382,7 @@ img.field{
     grid-row: 4/ span 1;
     justify-content: center;
 }
-.interest{
+#interest{
     grid-column: 1 / span 2;
     grid-row: 2/ span 1;
     text-align: center;
@@ -394,7 +392,7 @@ img.field{
     margin-bottom: 5%;
 
 }
-.interest1{
+#interest1{
     grid-column: 1 / span 2;
     grid-row: 3/ span 1;
     text-align: center;
@@ -416,7 +414,7 @@ form {
     margin-left: 10%;
     padding: 2%;
 }
-.intro-heading1{
+#contact-heading{
     font-family: "Dancing Script", serif;
     color: #146061;
     font-size: 24px;
@@ -489,7 +487,7 @@ form {
     transition: top 1s ease-out;
     z-index: 1;
   }
-  .intro-image2{
+  #garden-image2{
       display: none;
   }
 
@@ -533,70 +531,70 @@ form {
         grid-row: 2 / span 1;
         margin-left: 25%;
     }
-    .intro-heading{
+    #intro-heading{
         grid-column: 1 /span 1;
         grid-row: 1 / span 1;
     }
-    .intro-paragraph{
+    #intro-paragraph{
         justify-content: center;
         margin-top: 15%;
         margin-left: 5%;
         margin-right: 5%;
         font-size: 20px;
     }
-    .intro-explation{
+    #intro-explation{
         grid-column: 1 /span 2;
         grid-row: 3 / span 1;
     }
     /* personal */
-    .personal-1{
+    #personal-1{
         grid-column:2/ span 1;
         grid-row: 2 / span 1;
         text-align: center;
         padding: 1em;
         margin-top: 35%;
     }
-    .image2{
+    #image2{
         grid-column:1/ span 1;
         grid-row: 3 / span 1;
     }
-    .image3{
+    #image3{
         grid-column:2/ span 1;
         grid-row: 3 / span 1;
     }
-    .personal-2{
+    #personal-2{
         grid-column:1/ span 1;
         grid-row: 4 / span 1;
         text-align: center;
         margin-top: 25%;
     }
-    .personal-3{
+    #personal-3{
         grid-column:2/ span 1;
         grid-row: 6 / span 1;
         text-align: center;
         margin-top: 25%;
     }
-    .image4{
+    #image4{
         grid-column:2/ span 1;
         grid-row: 4 / span 1;
     }
-    .image5{
+    #image5{
         grid-column:1/ span 1;
         grid-row: 5 / span 1;
     }
-    .image6{
+    #image6{
         grid-column:2/ span 1;
         grid-row: 5 / span 1;
     }
-    .image7{
+    #image7{
         grid-column:1/ span 1;
         grid-row: 6 / span 1;
     }
-    .image8{
+    #image8{
         grid-column:1/ span 1;
         grid-row: 7 / span 1;
     }
-    .image9{
+    #image9{
         display:initial ;
         grid-column:2/ span 1;
         grid-row: 7 / span 1;
@@ -614,7 +612,7 @@ form {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto auto;
     }
-    #acad{
+    .relevant{
         font-size: 24px;
         grid-row: 1;
         grid-column: 1/-1;
@@ -640,9 +638,11 @@ form {
         grid-column: 1/ span 1;
 
     }
-
+h1#acad{
+    font-size: 24px;
+}
     #engineering2{
-        grid-row: 4/span 1;
+        grid-row: 3/span 1;
         grid-column: 1/ span 1;
 
     }
@@ -715,13 +715,13 @@ form {
         grid-column: 1 /span 2;
         grid-row: 3/ span 1;
     }
-    .interest{
+    #interest{
         grid-column: 1 / span 1;
         grid-row: 2/ span 1;
         border: thick double #1c898a;
         padding: 2%;
     }
-    .interest1{
+    #interest1{
         grid-column: 2/ span 1;
         grid-row:2/ span 1;
         border: thick double #1c898a;
@@ -735,7 +735,7 @@ form {
 }
 @media screen and (min-width: 770px){
 /* Index */
-.intro-explation{
+#intro-explation{
     grid-column: 2 /span 1;
     grid-row: 2 / span 1;
     margin-top: 20%;
@@ -747,54 +747,54 @@ form {
     .personal_container{
         grid-template-columns:  1fr 1fr 1fr;
     }
-    .image2{
+    #image2{
         grid-row: 2/span 1;
         grid-column: 2/span 1;
     }
-    .image3{
+    #image3{
         grid-row: 2/span 1;
         grid-column: 3/span 1;
     }
-    .image3{
+    /* .image3{
         grid-row: 2/span 1;
         grid-column: 3/span 1;
-    }
-    .personal-1{
+    } */
+#personal-1{
         grid-row: 3/ span 2;
         grid-column: 2/ span 1;
     }
-    .image4{
+    #image4{
         grid-row: 3/ span 2;
         grid-column: 3/ span 1;
     }
-    .image5{
+    #image5{
         grid-row: 5/ span 1;
         grid-column: 1/ span 1;
     }
-    .image6{
+    #image6{
         grid-row: 5/ span 1;
         grid-column: 2/ span 1;
     }
-    .image7{
+    #image7{
         grid-row: 5/ span 1;
         grid-column: 3/ span 1;
     }
-    .image9{
+    #image9{
         display:initial ;
         grid-column:2/ span 1;
         grid-row: 6 / span 1;
 
     }
-    .personal-2{
+    #personal-2{
         grid-row: 6/ span 1;
         grid-column: 3/ span 1;
     }
-    .personal-3{
+    #personal-3{
         grid-row: 6/ span 1;
         grid-column: 1/ span 1;
 
     }
-    .image8{
+    #image8{
         grid-row: 3/ span 2;
         grid-column: 1/ span 1;
     }
@@ -856,7 +856,7 @@ form {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
     }
-    .intro-image{
+    #garden-image{
         grid-column: 1/ span 1;
         grid-row: 1 / span 1;
     }
@@ -867,7 +867,7 @@ form {
         margin-top: 25%;
 
     }
-    .intro-image2{
+    #garden-image2{
         display: block;
 
         grid-column: 3/ span 1;
@@ -875,11 +875,11 @@ form {
 
     }
 
-    .break {
+    /* .break {
         display: none;
         /* flex-basis: 0%;
-        height: 0; */
-    }
+        height: 0;
+    } */
     header {
         display: flex;
         flex-direction: row;
