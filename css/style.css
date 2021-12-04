@@ -638,7 +638,7 @@ form {
         grid-column: 1/ span 1;
 
     }
-h1#acad{
+h1.acad{
     font-size: 24px;
 }
     #engineering2{
@@ -906,10 +906,15 @@ h1#acad{
 } 
 
 
-@media (prefers-reduced-motion) {
-    .flip-card-inner {
+@media (prefers-reduced-motion: reduce) {
+    /* .flip-card-inner {
         transition: transform none;
+    } */
+    .header{
+       background-attachment:local;
     }
-
+    .fade-in{
+        animation: none;
+    }
 
 }
