@@ -304,12 +304,7 @@ footer{
 
     display: none;
 }
-#skip{
-    grid-column:1/ span 2;
-    grid-row: 3 / span 1;
-    text-align: center;
-    padding: 1em;
-}
+
 #personal-2{
     grid-column:1/-1;
     grid-row:5 / span 1;
@@ -357,6 +352,12 @@ ul{
 #download a{
     color:#048a99;
     text-decoration: underline;
+}
+#skip{
+    grid-column:1/ span 2;
+    grid-row: 3 / span 1;
+    text-align: center;
+    padding: 1em;
 }
 /* Professional */
 .intern{
@@ -413,7 +414,7 @@ form {
     width: 75%;
     margin-left: 10%;
     padding: 2%;
-}
+} 
 #contact-heading{
     font-family: "Dancing Script", serif;
     color: #146061;
@@ -548,7 +549,7 @@ form {
         grid-row: 3 / span 1;
     }
     /* personal */
-    #personal-1{
+    .personal-1{
         grid-column:2/ span 1;
         grid-row: 2 / span 1;
         text-align: center;
@@ -629,6 +630,11 @@ form {
         display: inline-block
     }
 
+    #engineering2{
+        grid-row: 3/span 1;
+        grid-column: 1/ span 1;
+
+    }
     #enginering3{
         grid-row: 3/span 1;
         grid-column: 2/ span 1;
@@ -639,11 +645,11 @@ form {
         grid-column: 1/ span 1;
 
     }
-h1.acad{
-    font-size: 24px;
-}
+    h1.acad{
+        font-size: 24px;
+    }
     #engineering2{
-        grid-row: 3/span 1;
+        grid-row: 4/span 1;
         grid-column: 1/ span 1;
 
     }
@@ -823,7 +829,10 @@ h1.acad{
         grid-column: 3 / span 1;
         grid-row: 3 / span 1;
     }
-
+    #engineering2 {
+        grid-row: 3/span 1;
+        grid-column: 1/ span 1;
+    }
     .relevantP{
         grid-template-columns: 1fr 1fr 1fr;    
     }
