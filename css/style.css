@@ -304,8 +304,8 @@ footer{
 
     display: none;
 }
-#personal-1{
-    grid-column:1/-1;
+#skip{
+    grid-column:1/ span 2;
     grid-row: 3 / span 1;
     text-align: center;
     padding: 1em;
@@ -419,6 +419,7 @@ form {
     color: #146061;
     font-size: 24px;
     padding: 3%;
+    margin: auto;
 }
   
  legend{ 
@@ -759,7 +760,7 @@ h1.acad{
         grid-row: 2/span 1;
         grid-column: 3/span 1;
     } */
-#personal-1{
+    #skip{
         grid-row: 3/ span 2;
         grid-column: 2/ span 1;
     }
